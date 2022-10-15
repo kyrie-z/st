@@ -1,0 +1,28 @@
+diff --git a/Makefile b/Makefile
+index 470ac86..4d49649 100644
+--- a/Makefile
++++ b/Makefile
+@@ -30,7 +30,7 @@ st: $(OBJ)
+ 	$(CC) -o $@ $(OBJ) $(STLDFLAGS)
+ 
+ clean:
+-	rm -f st $(OBJ) st-$(VERSION).tar.gz
++	rm -f st $(OBJ) st-$(VERSION).tar.gz config.h
+ 
+ dist: clean
+ 	mkdir -p st-$(VERSION)
+diff --git a/config.mk b/config.mk
+index 1e306f8..95bf86c 100644
+--- a/config.mk
++++ b/config.mk
+@@ -7,8 +7,8 @@ VERSION = 0.9
+ PREFIX = /usr/local
+ MANPREFIX = $(PREFIX)/share/man
+ 
+-X11INC = /usr/X11R6/include
+-X11LIB = /usr/X11R6/lib
++X11INC = /usr/include/X11
++X11LIB = /usr/include/X11
+ 
+ PKG_CONFIG = pkg-config
+ 
