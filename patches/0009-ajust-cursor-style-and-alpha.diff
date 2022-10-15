@@ -1,0 +1,22 @@
+Index: st/config.def.h
+===================================================================
+--- st.orig/config.def.h
++++ st/config.def.h
+@@ -94,7 +94,7 @@ char *termname = "st-256color";
+ unsigned int tabspaces = 8;
+ 
+ /* bg opacity */
+-float alpha = 0.8;
++float alpha = 0.9;
+ 
+ /* Terminal colors (16 first used in escape sequence) */
+ static const char *colorname[] = {
+@@ -154,7 +154,7 @@ unsigned int defaultunderline = 7;
+  * 6: Bar ("|")
+  * 7: Snowman ("☃")
+  */
+-static unsigned int cursorshape = 2;
++static unsigned int cursorshape = 4;
+ 
+ /*
+  * Default columns and rows numbers
